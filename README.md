@@ -1,7 +1,13 @@
-## AWS API
+## **AWS API**
 ![image_0_Image9.jpg.png](./img/image_0_Image9.jpg.png)
 
-## User
+<br>
+
+---
+
+<br>
+
+## **User**
 -	When you sign-up first time, its creates root user
 -	never use this root user
 
@@ -15,13 +21,19 @@ STEP 3 : Attach the policy as per requirement
 STEP 4 : Create access key to access user through CLI
 ![image_1_Image15.png.png](./img/image_1_Image15.png.png)
 
-## AWS CLI
+<br>
+
+---
+
+<br>
+
+## **AWS CLI**
 ![image_1_Image16.png.png](./img/image_1_Image16.png.png)
 ![image_2_Image19.jpg.png](./img/image_2_Image19.jpg.png)
 ![image_2_Image20.jpg.png](./img/image_2_Image20.jpg.png)
 ![image_2_Image21.jpg.png](./img/image_2_Image21.jpg.png)
 
-Install AWS CLI 
+### ***Install AWS CLI***
 
 Following command will show credentials of Root account 
 ![image_3_Image24.jpg.png](./img/image_3_Image24.jpg.png)
@@ -45,7 +57,13 @@ By default commands will be executed for root user
 Execute command for specific user
 ![image_4_Image33.jpg.png](./img/image_4_Image33.jpg.png)
 
-## IAM (Identity & Access Management) 
+<br>
+
+---
+
+<br>
+
+## **IAM (Identity & Access Management)**
 ![image_5_Image45.jpg.png](./img/image_5_Image45.jpg.png)
 
 Policy : set of permissions (what is allowed & not allowed)
@@ -67,13 +85,20 @@ In essence, roles are more dynamic and are used to grant permissions to entities
 ![image_9_Image61.jpg.png](./img/image_9_Image61.jpg.png)
 ![image_10_Image64.jpg.png](./img/image_10_Image64.jpg.png)
 ![image_10_Image65.jpg.png](./img/image_10_Image65.jpg.png)
-## IAM Best Practice 
+
+## **IAM Best Practice**
 ![image_10_Image66.jpg.png](./img/image_10_Image66.jpg.png)
 
-### Service control policy
+### **Service control policy**
 ![image_11_Image69.jpg.png](./img/image_11_Image69.jpg.png)
 
-## Roles
+<br>
+
+---
+
+<br>
+
+## **Roles**
 
 2 ways of assigning policies
 
@@ -103,7 +128,49 @@ assign/assume the to user1
 ![image_15_Image88.png.png](./img/image_15_Image88.png.png)
 ![image_16_Image91.png.png](./img/image_16_Image91.png.png)
 
-User permissions & Policies
+<br>
+
+---
+
+<br>
+
+## **VPC and CIDR**
+`200.10.20.32/28`
+32 - 28(fixed bits) = 4 
+
+i.e 2 <sup>4</sup> = network of 16 ips
+
+200.10.20.0010`0000` = 200.10.20.32 = network ID (**reserved**)
+200.10.20.0010`0001` = 200.10.20.33 = usable <br>
+. <br>
+. <br>
+. <br>
+
+200.10.20.0010`1111` = 200.10.20.47 =  broadcast address (**reserved**)
+
+### create VPC
+![Alt text](./img/image.png)
+
+### create Internet GateWay
+![Alt text](./img/image-0.png)
+![Alt text](./img/image-1.png)
+![Alt text](./img/image-2.png)
+
+
+### create subnet 
+![Alt text](./img/image-3.png)
+
+Fix a bit after network it to divide the network, e.g., Fixing 1 bit divids the network into 2
+![Alt text](./img/image-4.png)
+![source](https://www.youtube.com/watch?v=wvvoT-dpr8o)
+
+<br>
+
+---
+
+<br>
+
+## **User permissions & Policies**
 ![image_17_Image94.jpg.png](./img/image_17_Image94.jpg.png)
 ![image_17_Image95.jpg.png](./img/image_17_Image95.jpg.png)
 
@@ -128,7 +195,13 @@ Private key downloaded automatically
 ![image_22_Image117.jpg.png](./img/image_22_Image117.jpg.png)
 ![image_23_Image120.jpg.png](./img/image_23_Image120.jpg.png)
 
-User Data
+<br>
+
+---
+
+<br>
+
+## **User Data**
 
 1 : For Ubuntu 
 ![image_23_Image121.jpg.png](./img/image_23_Image121.jpg.png)
@@ -215,8 +288,13 @@ Static website hosting
 ## EFS 
 ## EQS
 
+<br>
 
-Lambda
+---
+
+<br>
+
+## **Lambda**
 
 lambda is basically a server less servce
 
